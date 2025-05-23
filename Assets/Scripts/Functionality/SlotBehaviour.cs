@@ -80,13 +80,15 @@ public class SlotBehaviour : MonoBehaviour
     [SerializeField]
     private Sprite[] Ten_Sprite;
     [SerializeField]
-    private Sprite[] FortuneCake_Sprite;
+    private Sprite[] Drum_Sprite;
     [SerializeField]
-    private Sprite[] Dimpsum_Sprite;
+    private Sprite[] King_Sprite;
     [SerializeField]
-    private Sprite[] Laltern_Sprite;
+    private Sprite[] Ship_Sprite;
     [SerializeField]
-    private Sprite[] kattle_Sprite;
+    private Sprite[] Tree_Sprite;
+    [SerializeField]
+    private Sprite[] Dollar_Sprite;
     
 
     [Header("Miscellaneous UI")]
@@ -555,37 +557,37 @@ public class SlotBehaviour : MonoBehaviour
                 animScript.AnimationSpeed = 28f;
                 break;
             case 6:
-                for (int i = 0; i < Dimpsum_Sprite.Length; i++)
+                for (int i = 0; i < Drum_Sprite.Length; i++)
                 {
-                    animScript.textureArray.Add(Dimpsum_Sprite[i]);
+                    animScript.textureArray.Add(Drum_Sprite[i]);
                 }
                 animScript.AnimationSpeed = 28f;
                 break;
             case 7:
-                for (int i = 0; i < FortuneCake_Sprite.Length; i++)
+                for (int i = 0; i < King_Sprite.Length; i++)
                 {
-                    animScript.textureArray.Add(FortuneCake_Sprite[i]);
+                    animScript.textureArray.Add(King_Sprite[i]);
                 }
                 animScript.AnimationSpeed = 28f;
                 break;
             case 8:
-                for (int i = 0; i < kattle_Sprite.Length; i++)
+                for (int i = 0; i < Ship_Sprite.Length; i++)
                 {
-                    animScript.textureArray.Add(kattle_Sprite[i]);
+                    animScript.textureArray.Add(Ship_Sprite[i]);
                 }
                 animScript.AnimationSpeed = 28f;
                 break;
             case 9:
-                for (int i = 0; i < kattle_Sprite.Length; i++)
+                for (int i = 0; i < Tree_Sprite.Length; i++)
                 {
-                    animScript.textureArray.Add(kattle_Sprite[i]);
+                    animScript.textureArray.Add(Tree_Sprite[i]);
                 }
                 animScript.AnimationSpeed = 28f;
                 break;
             case 10:
-                for (int i = 0; i < Laltern_Sprite.Length; i++)
+                for (int i = 0; i < Dollar_Sprite.Length; i++)
                 {
-                    animScript.textureArray.Add(Laltern_Sprite[i]);
+                    animScript.textureArray.Add(Dollar_Sprite[i]);
                 }
                 animScript.AnimationSpeed = 28f;
                 break;

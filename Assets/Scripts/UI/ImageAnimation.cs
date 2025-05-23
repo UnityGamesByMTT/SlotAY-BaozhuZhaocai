@@ -35,6 +35,7 @@ public class ImageAnimation : MonoBehaviour
 
 	public float delayBetweenLoop;
 
+	public bool IsComplete = false;
 	private void Awake()
 	{
 		if (Instance == null)
@@ -69,10 +70,12 @@ public class ImageAnimation : MonoBehaviour
 			{
 				Invoke("AnimationProcess", delayBetweenAnimation + delayBetweenLoop);
 			}
+			IsComplete = true;
 		}
 		else
 		{
 			Invoke("AnimationProcess", delayBetweenAnimation);
+			
 		}
 	}
 
@@ -85,6 +88,7 @@ public class ImageAnimation : MonoBehaviour
 			delayBetweenAnimation = idealFrameRate * (float)textureArray.Count / AnimationSpeed;
 			currentAnimationState = ImageState.PLAYING;
 			Invoke("AnimationProcess", delayBetweenAnimation);
+			IsComplete = false;
 		}
 	}
 
